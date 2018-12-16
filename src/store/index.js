@@ -43,7 +43,7 @@ const store = new Vuex.Store({
           {
               return;
           }
-          card.flipped = !card.flipped
+          card.flipped = true
       },
       flipCards (state) {
         state.cards.filter(card => card.flipped).map(c => c.flipped = false)
